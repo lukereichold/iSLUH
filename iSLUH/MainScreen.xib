@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1024" defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreen">
+            <connections>
+                <outlet property="amdgLabel" destination="4" id="ekH-8S-vpI"/>
+                <outlet property="calendarButton" destination="17" id="hHd-Vt-nrP"/>
+                <outlet property="calendarLabel" destination="27" id="tRW-b6-Hji"/>
+                <outlet property="driveButton" destination="21" id="EJL-YE-6Ol"/>
+                <outlet property="driveLabel" destination="30" id="2WF-Mu-Z4U"/>
+                <outlet property="gamesButton" destination="31" id="aDS-sw-WL2"/>
+                <outlet property="gamesLabel" destination="35" id="Mon-4f-92O"/>
+                <outlet property="gradesButton" destination="16" id="uuK-8Z-80s"/>
+                <outlet property="gradesLabel" destination="26" id="iYY-mE-nSg"/>
+                <outlet property="infoButton" destination="37" id="LTB-Dh-WHS"/>
+                <outlet property="mailButton" destination="15" id="qjx-AG-UT1"/>
+                <outlet property="mailLabel" destination="29" id="VVj-rf-FLx"/>
+                <outlet property="mapsButton" destination="20" id="Xmy-D9-U9a"/>
+                <outlet property="mapsLabel" destination="33" id="vc9-mT-i27"/>
+                <outlet property="moreResourcesButton" destination="42" id="ZZZ-p2-PB8"/>
+                <outlet property="newsButton" destination="11" id="LAh-71-Drh"/>
+                <outlet property="newsLabel" destination="28" id="Jln-LT-U2g"/>
+                <outlet property="sportsButton" destination="13" id="oPb-mg-ceA"/>
+                <outlet property="sportsLabel" destination="34" id="QkJ-Yn-ic5"/>
+                <outlet property="view" destination="1" id="7"/>
+                <outletCollection property="labelsCollection" destination="26" id="n0C-ki-Na5"/>
+                <outletCollection property="labelsCollection" destination="27" id="yRZ-AR-eW2"/>
+                <outletCollection property="labelsCollection" destination="28" id="EUV-rc-Xdb"/>
+                <outletCollection property="labelsCollection" destination="29" id="HWx-B3-92N"/>
+                <outletCollection property="labelsCollection" destination="30" id="TyC-Ka-r8f"/>
+                <outletCollection property="labelsCollection" destination="35" id="boN-ar-Akb"/>
+                <outletCollection property="labelsCollection" destination="34" id="gtb-kB-KtV"/>
+                <outletCollection property="labelsCollection" destination="33" id="U6X-38-UrA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AMDG" lineBreakMode="tailTruncation" minimumFontSize="10" id="4">
+                    <rect key="frame" x="8" y="71" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.66666666669999997" green="0.56078431370000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="11">
+                    <rect key="frame" x="7" y="111" width="95" height="73"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" image="news.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadWebFeature:" destination="-1" eventType="touchUpInside" id="24"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="13">
+                    <rect key="frame" x="8" y="375" width="100" height="93"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" image="sports.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadSportsFeature:" destination="-1" eventType="touchUpInside" id="14"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="15">
+                    <rect key="frame" x="5" y="251" width="99" height="63"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" image="mail.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadWebFeature:" destination="-1" eventType="touchUpInside" id="22"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="16">
+                    <rect key="frame" x="221" y="111" width="93" height="75"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="grades.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadWebFeature:" destination="-1" eventType="touchUpInside" id="23"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17">
+                    <rect key="frame" x="124" y="99" width="85" height="85"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="calendar.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadCalendar:" destination="-1" eventType="touchUpInside" id="39"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20">
+                    <rect key="frame" x="123" y="383" width="91" height="83"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="maps.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMap:" destination="-1" eventType="touchUpInside" id="CiV-gC-47Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clearsContextBeforeDrawing="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21">
+                    <rect key="frame" x="124" y="250" width="88" height="69"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="moodle.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadWebFeature:" destination="-1" eventType="touchUpInside" id="25"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="26">
+                    <rect key="frame" x="213" y="188" width="108" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="27">
+                    <rect key="frame" x="129" y="188" width="76" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prep News" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="28">
+                    <rect key="frame" x="10" y="188" width="88" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mail" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="29">
+                    <rect key="frame" x="0.0" y="317" width="105" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drive" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="30">
+                    <rect key="frame" x="116" y="317" width="105" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="31">
+                    <rect key="frame" x="226" y="239" width="85" height="83"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" image="games.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadGamesIndex:" destination="-1" eventType="touchUpInside" id="u7u-g6-lcU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maps" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="33">
+                    <rect key="frame" x="115" y="464" width="105" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sports" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="34">
+                    <rect key="frame" x="0.0" y="464" width="105" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Games" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="35">
+                    <rect key="frame" x="225" y="317" width="89" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" lineBreakMode="middleTruncation" id="37">
+                    <rect key="frame" x="5" y="508" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadInfoFeature:" destination="-1" eventType="touchUpInside" id="38"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="42" userLabel="Button - More Resources">
+                    <rect key="frame" x="182" y="492" width="132" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="More Resources">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.66666666669999997" green="0.56078431370000004" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMoreResources:" destination="-1" eventType="touchUpInside" id="43"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="JsN-M3-sFh">
+                    <rect key="frame" x="0.0" y="61" width="320" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.72549019607843135" green="0.51764705882352935" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.33333333333333331" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.16078431369999999" green="0.66666666669999997" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar.png" width="85" height="85"/>
+        <image name="games.png" width="95" height="95"/>
+        <image name="grades.png" width="96" height="71"/>
+        <image name="mail.png" width="99" height="64"/>
+        <image name="maps.png" width="97" height="83"/>
+        <image name="moodle.png" width="88" height="69"/>
+        <image name="news.png" width="102" height="80"/>
+        <image name="sports.png" width="86" height="86"/>
+    </resources>
+</document>
