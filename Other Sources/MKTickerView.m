@@ -17,6 +17,8 @@
 //	if you are re-publishing after editing, please retain the above copyright notices
 
 #import "MKTickerView.h"
+#import "UIColor+SLUHCustom.h"
+
 #define kButtonBaseTag 10000
 #define kLabelPadding 10
 #define kItemPadding 30

@@ -1,6 +1,9 @@
 #import "CampusMinistry.h"
 #import "PBWebViewController.h"
 #import "Reachability.h"
+#import "UIColor+SLUHCustom.h"
+#import "Convenience.h"
+#import "NSURL+SLUHCustom.h"
 
 @interface CampusMinistry ()
 

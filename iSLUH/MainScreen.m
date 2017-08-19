@@ -13,6 +13,10 @@
 #import "MKTickerView.h"
 #import "Reachability.h"
 #import "NSMutableArray+Shuffling.h"
+#import "UIColor+SLUHCustom.h"
+#import "NSURL+SLUHCustom.h"
+#import "Convenience.h"
+
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 

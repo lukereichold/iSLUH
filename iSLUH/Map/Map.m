@@ -1,5 +1,6 @@
 #import "Map.h"
 #import "PBWebViewController.h"
+#import "Convenience.h"
 
 @interface Map ()
 

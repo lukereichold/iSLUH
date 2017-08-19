@@ -3,6 +3,8 @@
 #import "NSString+FontAwesome.h"
 #import "UIFont+FontAwesome.h"
 #import <EventKit/EventKit.h>
+#import "UIColor+SLUHCustom.h"
+#import "Convenience.h"
 
 @interface CalendarDetailPhone ()
 

@@ -1,4 +1,7 @@
 #import "Info.h"
+#import "UIColor+SLUHCustom.h"
+#import "NSURL+SLUHCustom.h"
+
 
 @interface Info ()
 

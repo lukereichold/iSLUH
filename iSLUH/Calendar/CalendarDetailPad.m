@@ -2,6 +2,8 @@
 #import "Calendar.h"
 #import "NSString+FontAwesome.h"
 #import <EventKit/EventKit.h>
+#import "UIColor+SLUHCustom.h"
+#import "Convenience.h"
 
 @interface CalendarDetailPad ()
 

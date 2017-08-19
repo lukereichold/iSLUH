@@ -1,6 +1,9 @@
 #import "Sports.h"
 #import "PBWebViewController.h"
 #import "Reachability.h"
+#import "UIColor+SLUHCustom.h"
+#import "NSURL+SLUHCustom.h"
+#import "Convenience.h"
 
 @interface Sports ()
 

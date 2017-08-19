@@ -1,4 +1,6 @@
 #import "Info-iPad.h"
+#import "UIColor+SLUHCustom.h"
+#import "NSURL+SLUHCustom.h"
 
 @interface Info_iPad ()
 

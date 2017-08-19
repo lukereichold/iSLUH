@@ -2,6 +2,8 @@
 #import "FlashCardsViewController.h"
 #import "FlashCardsVCiPad.h"
 #import "DYKiPad.h"
+#import "UIColor+SLUHCustom.h"
+#import "Convenience.h"
 
 @interface GamesIndex ()
 

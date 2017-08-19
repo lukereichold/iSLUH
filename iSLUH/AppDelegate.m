@@ -7,9 +7,11 @@
 #import "MainScreen.h"
 #import "MainScreeniPad.h"
 #import "Appirater.h"
-#import "UAirship.h"
-#import "UAConfig.h"
-#import "UAPush.h"
+//#import "UAirship.h"
+//#import "UAConfig.h"
+//#import "UAPush.h"
+#import "UIColor+SLUHCustom.h"
+#import "Convenience.h"
 
 static const double kTitleFontSizePad = 32.0;
 static const double kTitleFontSizePhone = 24.0;
@@ -51,9 +53,9 @@ static const double kTitleFontSizePhone = 24.0;
     [Appirater appLaunched:YES];
 
     // Start UrbanAirship (Push Notification support)
-    UAConfig *config = [UAConfig defaultConfig];
-    [UAirship takeOff:config];
-    [[UAPush shared] resetBadge];
+//    UAConfig *config = [UAConfig defaultConfig];
+//    [UAirship takeOff:config];
+//    [[UAPush shared] resetBadge];
 }
 
 - (UIView *) formatNavItemTitleView {
@@ -89,16 +91,16 @@ static const double kTitleFontSizePhone = 24.0;
         }
     }
     
-    [[UAPush shared] handleNotification:userInfo applicationState:appState];
-    [[UAPush shared] resetBadge];
+//    [[UAPush shared] handleNotification:userInfo applicationState:appState];
+//    [[UAPush shared] resetBadge];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {
-    UALOG(@"Failed To Register For Remote Notifications With Error: %@", error);
+//    UALOG(@"Failed To Register For Remote Notifications With Error: %@", error);
 }
 
 - (void) applicationDidBecomeActive:(UIApplication *)application {
-    [[UAPush shared] resetBadge];
+//    [[UAPush shared] resetBadge];
 }
 
 - (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {

@@ -13,6 +13,9 @@
 #import "MKTickerView.h"
 #import "Reachability.h"
 #import "NSMutableArray+Shuffling.h"
+#import "UIColor+SLUHCustom.h"
+#import "NSURL+SLUHCustom.h"
+
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 
@@ -190,9 +193,11 @@
     if ([dict isKindOfClass:[NSDictionary class]]) {
         
         if ([(NSDictionary *)dict objectForKey:@"Title"]) {
-            return [(NSDictionary *)dict objectForKey:@"Title"];
+//            return [(NSDictionary *)dict objectForKey:@"Title"];
+            return @"THIS IS A TEST TITLE";
         }
-        else return @"";
+        else
+            return @"";
     }
     else {
         return @"";
@@ -205,7 +210,8 @@
     if ([dict isKindOfClass:[NSDictionary class]]) {
         
         if ([(NSDictionary *)dict objectForKey:@"Description"]) {
-            return [(NSDictionary *)dict objectForKey:@"Description"];
+//            return [(NSDictionary *)dict objectForKey:@"Description"];
+            return @"THIS IS A TEST DESCRIPTION";
         }
         else return @"";
     }
@@ -286,6 +292,9 @@
     NSError* e = nil;
     NSMutableArray* data = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&e];
     [data shuffle];
+    
+    NSLog(@"## TICKER ITEMS:");
+    NSLog(@"%@", data);
 
     if (data.count > 0) {
         //self.tickerItems = nil;

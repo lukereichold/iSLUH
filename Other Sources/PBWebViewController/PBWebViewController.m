@@ -8,6 +8,7 @@
 
 #import "PBWebViewController.h"
 #import "PBSafariActivity.h"
+#import "Convenience.h"
 
 @interface PBWebViewController () <UIPopoverControllerDelegate>
 

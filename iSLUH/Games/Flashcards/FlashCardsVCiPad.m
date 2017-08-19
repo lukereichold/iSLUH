@@ -1,5 +1,7 @@
 #import "FlashCardsVCiPad.h"
 #import "CreateCardsVCiPad.h"
+#import "UIColor+SLUHCustom.h"
+
 
 @implementation FlashCardsVCiPad
 

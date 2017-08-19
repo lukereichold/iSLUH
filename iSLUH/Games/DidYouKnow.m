@@ -1,6 +1,7 @@
 #import "DidYouKnow.h"
 #import <stdlib.h>
 #import <time.h>
+#import "UIColor+SLUHCustom.h"
 
 @interface DidYouKnow ()
 
