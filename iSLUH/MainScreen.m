@@ -128,7 +128,7 @@
 - (IBAction)loadCalendar:(id)sender
 {
  	kal = [[KalViewController alloc]init];	
-	kal.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Today" style:UIBarButtonItemStyleBordered target:self action:@selector(showAndSelectToday)];
+	kal.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Today" style:UIBarButtonItemStylePlain target:self action:@selector(showAndSelectToday)];
 	kal.delegate = self;
 	dataSource = [[HolidayJSONDataSource alloc]init];
 	kal.dataSource = dataSource;
@@ -222,7 +222,7 @@
 }
 
 - (void)setBackButtonText:(NSString *)text {
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStyleBordered target: nil action: nil];
+    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStylePlain target: nil action: nil];
     [[self navigationItem] setBackBarButtonItem: newBackButton];
 }
 

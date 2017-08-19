@@ -30,14 +30,14 @@ static const double kTitleFontSizePhone = 24.0;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     if ([Convenience isiPad]) {
-        MainScreeniPad *firstPage = [[MainScreeniPad alloc]initWithNibName:@"MainScreeniPad" bundle:nil];
+        MainScreeniPad *firstPage = [[MainScreeniPad alloc] initWithNibName:@"MainScreeniPad" bundle:nil];
         
         firstPage.navigationItem.titleView = [self formatNavItemTitleView];
         firstPage.navigationItem.hidesBackButton = YES;
         self.navigationController = [[RotatableNavController alloc] initWithRootViewController:firstPage];
 
     } else {
-        MainScreen *firstPage = [[MainScreen alloc]initWithNibName:@"MainScreen" bundle:nil];
+        MainScreen *firstPage = [[MainScreen alloc] initWithNibName:@"MainScreen" bundle:nil];
         firstPage.navigationItem.titleView = [self formatNavItemTitleView];
         firstPage.navigationItem.hidesBackButton = YES;
         self.navigationController = [[RotatableNavController alloc] initWithRootViewController:firstPage];
@@ -50,7 +50,7 @@ static const double kTitleFontSizePhone = 24.0;
     [Appirater appLaunched:YES];
 }
 
-- (UIView *) formatNavItemTitleView {
+- (UIView *)formatNavItemTitleView {
     
     double fontSize = ([Convenience isiPad]) ? kTitleFontSizePad : kTitleFontSizePhone;
     UILabel *titleLabel = [[UILabel alloc] init];
@@ -87,10 +87,5 @@ static const double kTitleFontSizePhone = 24.0;
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error { }
 
 - (void) applicationDidBecomeActive:(UIApplication *)application { }
-
-- (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    
-    return ([Convenience isiPad]) ? UIInterfaceOrientationMaskAll : (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
-}
 
 @end

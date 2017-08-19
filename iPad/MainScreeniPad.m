@@ -115,13 +115,13 @@
 - (IBAction)loadCalendar:(id)sender
 {
 	kal = [[KalViewController alloc]init];	
-	kal.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Today" style:UIBarButtonItemStyleBordered target:self action:@selector(showAndSelectToday)];
+	kal.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Today" style:UIBarButtonItemStylePlain target:self action:@selector(showAndSelectToday)];
 	kal.delegate = self;
 	dataSource = [[HolidayJSONDataSource alloc]init];
 	kal.dataSource = dataSource;
 	self.navigationItem.title = @"Main Calendar";
 	
-	UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Home" style: UIBarButtonItemStyleBordered target: nil action:nil];
+	UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:@"Home" style: UIBarButtonItemStylePlain target: nil action:nil];
 	[[self navigationItem] setBackBarButtonItem:newBackButton];
     
 	[self.navigationController pushViewController:kal animated:YES];
@@ -153,7 +153,7 @@
 }
 
 - (void)setBackButtonText:(NSString *)text {
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStyleBordered target: nil action: nil];
+    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStylePlain target: nil action: nil];
     [[self navigationItem] setBackBarButtonItem: newBackButton];
 }
 
@@ -174,12 +174,12 @@
 
 // Note: to get this Ticker to refresh every new time I open up the view, I'm removing the current MKTickerView, killing it, and adding a new one (with new data) in viewWillAppear.
 
-- (UIColor*) backgroundColorForTickerView:(MKTickerView *)vertMenu
+- (UIColor *)backgroundColorForTickerView:(MKTickerView *)vertMenu
 {
     return [UIColor sluhLightGrey];
 }
 
-- (int) numberOfItemsForTickerView:(MKTickerView *)tabView
+- (int)numberOfItemsForTickerView:(MKTickerView *)tabView
 {
     if (self.tickerItems != nil)
         return [self.tickerItems count];
@@ -187,7 +187,7 @@
         return 0;
 }
 
-- (NSString*) tickerView:(MKTickerView *)tickerView titleForItemAtIndex:(NSUInteger)index
+- (NSString *)tickerView:(MKTickerView *)tickerView titleForItemAtIndex:(NSUInteger)index
 {
     id dict = [self.tickerItems objectAtIndex:index];
     if ([dict isKindOfClass:[NSDictionary class]]) {
@@ -204,7 +204,7 @@
     }
 }
 
-- (NSString*) tickerView:(MKTickerView *)tickerView valueForItemAtIndex:(NSUInteger)index
+- (NSString *)tickerView:(MKTickerView *)tickerView valueForItemAtIndex:(NSUInteger)index
 {
     id dict = [self.tickerItems objectAtIndex:index];
     if ([dict isKindOfClass:[NSDictionary class]]) {
@@ -333,11 +333,7 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskAll;
-}
-
--(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     
     if (toInterfaceOrientation == UIDeviceOrientationPortrait || toInterfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
         

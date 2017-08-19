@@ -22,7 +22,7 @@
 
     self.twitterFeeds = [[NSArray alloc] initWithObjects:@"Baseball", @"Basketball", @"Hockey", @"Lacrosse", @"Rugby", @"Soccer", @"XC/Track", @"Water Polo", @"Athletic Director", nil];
     
-	self.sports = [[NSArray alloc] initWithObjects:@"Baseball", @"Basketball", @"Cross-Country", @"Football", @"Golf", @"Hockey", @"Inline Hockey", @"Lacrosse", @"Racquetball", @"Rifle", @"Rugby", @"Soccer", @"Swimming", @"Tennis", @"Track and Field", @"Ultimate Frisbee", @"Volleyball", @"Water Polo", @"Wresting", nil];
+	self.sports = [[NSArray alloc] initWithObjects:@"Baseball", @"Basketball", @"Cross-Country", @"Football", @"Golf", @"Hockey", @"Inline Hockey", @"Lacrosse", @"Racquetball", @"Rugby", @"Soccer", @"Swimming", @"Tennis", @"Track and Field", @"Ultimate Frisbee", @"Volleyball", @"Water Polo", @"Wresting", nil];
     
 	self.navigationItem.title = @"Sports";
     [super viewDidLoad];
@@ -30,11 +30,6 @@
 
 - (BOOL)shouldAutorotate {
     return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations {
-    
-    return ([Convenience isiPad]) ? UIInterfaceOrientationMaskAll : (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 
 #pragma mark Table view methods
@@ -198,53 +193,48 @@
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhRacquetball] title:@"SLUH Racquetball"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 9)     //rifle
-            {
-                self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhRifle] title:@"SLUH Riflery"];
-                [self.navigationController pushViewController:self.webController animated:YES];
-            }
-            else if (indexPath.row == 10)
+            else if (indexPath.row == 9)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhRugby] title:@"SLUH Rugby"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 11)
+            else if (indexPath.row == 10)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhSoccer] title:@"SLUH Soccer"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 12)
+            else if (indexPath.row == 11)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhSwimming] title:@"SLUH Swimming"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 13)
+            else if (indexPath.row == 12)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhTennis] title:@"SLUH Tennis"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 14)
+            else if (indexPath.row == 13)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhTrack] title:@"SLUH Track"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 15)
+            else if (indexPath.row == 14)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhUltimate] title:@"SLUH Ultimate"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 16)
+            else if (indexPath.row == 15)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhVolleyball] title:@"SLUH Volleyball"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
-            else if (indexPath.row == 17)
+            else if (indexPath.row == 16)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhWaterPolo] title:@"SLUH Water Polo"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
             
-            else if (indexPath.row == 18)
+            else if (indexPath.row == 17)
             {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhWrestling] title:@"SLUH Wrestling"];
                 [self.navigationController pushViewController:self.webController animated:YES];

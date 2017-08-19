@@ -114,10 +114,6 @@
 		C35949E81818A0F100659156 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C35949E51818A07E00659156 /* Reachability.m */; };
 		C35949ED1818BD1100659156 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = C35949EC1818BD1100659156 /* NSMutableArray+Shuffling.m */; };
 		C35949EE1818BEFC00659156 /* sluh_front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3D5269B13D215F700458496 /* sluh_front.jpg */; };
-		C3594A03181A343100659156 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = C35949FF181A343100659156 /* Icon-60.png */; };
-		C3594A04181A343100659156 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A00181A343100659156 /* Icon-60@2x.png */; };
-		C3594A05181A343100659156 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A01181A343100659156 /* Icon-76.png */; };
-		C3594A06181A343100659156 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A02181A343100659156 /* Icon-76@2x.png */; };
 		C3594A0D181ACD4D00659156 /* ipad-ret-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A07181ACD4C00659156 /* ipad-ret-landscape.png */; };
 		C3594A0E181ACD4D00659156 /* ipad-ret-portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A08181ACD4C00659156 /* ipad-ret-portrait.png */; };
 		C3594A0F181ACD4D00659156 /* ipad-std-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = C3594A09181ACD4C00659156 /* ipad-std-landscape.png */; };
@@ -141,7 +137,6 @@
 		C3814BE11800B02400EB4618 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3814BE01800B02400EB4618 /* MobileCoreServices.framework */; };
 		C3814BE21800B03600EB4618 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 533B285211E2D42300B3CC07 /* libsqlite3.dylib */; };
 		C3814BE41800B04700EB4618 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3814BE31800B04700EB4618 /* CoreTelephony.framework */; };
-		C3814BE81800B0B800EB4618 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3814BE71800B0B800EB4618 /* AirshipConfig.plist */; };
 		C3A9ED6417B8653200866C97 /* BreeSerif-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A9ED6317B8653200866C97 /* BreeSerif-Regular.otf */; };
 		C3F9B42A17DBCAD900F1DF1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F9B42917DBCAD900F1DF1D /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -314,10 +309,6 @@
 		C35949E51818A07E00659156 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C35949EB1818BD1100659156 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		C35949EC1818BD1100659156 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
-		C35949FF181A343100659156 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		C3594A00181A343100659156 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		C3594A01181A343100659156 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		C3594A02181A343100659156 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		C3594A07181ACD4C00659156 /* ipad-ret-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-ret-landscape.png"; sourceTree = "<group>"; };
 		C3594A08181ACD4C00659156 /* ipad-ret-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-ret-portrait.png"; sourceTree = "<group>"; };
 		C3594A09181ACD4C00659156 /* ipad-std-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-std-landscape.png"; sourceTree = "<group>"; };
@@ -344,7 +335,6 @@
 		C3814BDE1800B01700EB4618 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C3814BE01800B02400EB4618 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C3814BE31800B04700EB4618 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C3814BE71800B0B800EB4618 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		C3814BE91800B1BA00EB4618 /* libUAirship-3.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-3.0.0.a"; path = "../Airship/libUAirship-3.0.0.a"; sourceTree = "<group>"; };
 		C3A9ED6317B8653200866C97 /* BreeSerif-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.otf"; sourceTree = "<group>"; };
 		C3D5269B13D215F700458496 /* sluh_front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sluh_front.jpg; sourceTree = "<group>"; };
@@ -464,7 +454,6 @@
 				C3F9B42917DBCAD900F1DF1D /* Images.xcassets */,
 				C32EBEDA180A3782006A9C53 /* Convenience.h */,
 				C32EBEDB180A3782006A9C53 /* Convenience.m */,
-				C3814BE71800B0B800EB4618 /* AirshipConfig.plist */,
 				8D1107310486CEB800E47090 /* iSLUH-Info.plist */,
 				C32EBED4180A3778006A9C53 /* NSURL+SLUHCustom.h */,
 				C32EBED5180A3778006A9C53 /* NSURL+SLUHCustom.m */,
@@ -711,10 +700,6 @@
 			isa = PBXGroup;
 			children = (
 				C3814B8C17FF813500EB4618 /* logomark.png */,
-				C35949FF181A343100659156 /* Icon-60.png */,
-				C3594A00181A343100659156 /* Icon-60@2x.png */,
-				C3594A01181A343100659156 /* Icon-76.png */,
-				C3594A02181A343100659156 /* Icon-76@2x.png */,
 			);
 			path = "App Icons";
 			sourceTree = "<group>";
@@ -830,7 +815,6 @@
 				C32EBE6D180A356F006A9C53 /* FlashCardsViewController.xib in Resources */,
 				C3594A10181ACD4D00659156 /* ipad-std-portrait.png in Resources */,
 				C32EBE6B180A356F006A9C53 /* FlashCardsVCiPad.xib in Resources */,
-				C3594A03181A343100659156 /* Icon-60.png in Resources */,
 				C32EBE59180A352A006A9C53 /* CalendarDetailPad.xib in Resources */,
 				C3594A11181ACD4D00659156 /* Default-568h@2x.png in Resources */,
 				C32EBF2F180A61D1006A9C53 /* news.png in Resources */,
@@ -847,10 +831,8 @@
 				C32EBE87180A35A0006A9C53 /* DYKiPad.xib in Resources */,
 				C3594A0F181ACD4D00659156 /* ipad-std-landscape.png in Resources */,
 				C32EBE9B180A35DD006A9C53 /* CampusMinistry.xib in Resources */,
-				C3594A04181A343100659156 /* Icon-60@2x.png in Resources */,
 				C32EBF27180A61D1006A9C53 /* grades.png in Resources */,
 				C32EBE79180A358A006A9C53 /* CreateCardViewController.xib in Resources */,
-				C3814BE81800B0B800EB4618 /* AirshipConfig.plist in Resources */,
 				C32EBE91180A35CC006A9C53 /* Info.xib in Resources */,
 				C37494FF17E542AB005B7B00 /* VarelaRound-Regular.ttf in Resources */,
 				C32EBF26180A61D1006A9C53 /* games@2x.png in Resources */,
@@ -860,7 +842,6 @@
 				C32EBE63180A3556006A9C53 /* Map.xib in Resources */,
 				C37494FD17E5418F005B7B00 /* Varela-Regular.ttf in Resources */,
 				C32EBF2E180A61D1006A9C53 /* moodle@2x.png in Resources */,
-				C3594A05181A343100659156 /* Icon-76.png in Resources */,
 				C3814B8817FF6C9F00EB4618 /* Ubuntu-Light.ttf in Resources */,
 				C32EBF31180A61D1006A9C53 /* sports.png in Resources */,
 				C32EBE85180A35A0006A9C53 /* DidYouKnow.xib in Resources */,
@@ -880,7 +861,6 @@
 				C32EBF25180A61D1006A9C53 /* games.png in Resources */,
 				C32EBF2D180A61D1006A9C53 /* moodle.png in Resources */,
 				C32EBE5B180A352A006A9C53 /* CalendarDetailPhone.xib in Resources */,
-				C3594A06181A343100659156 /* Icon-76@2x.png in Resources */,
 				C32EBF32180A61D1006A9C53 /* sports@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1055,7 +1035,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;
@@ -1093,7 +1073,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
 				PREBINDING = NO;

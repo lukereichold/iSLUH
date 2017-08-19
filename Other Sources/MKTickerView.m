@@ -132,7 +132,9 @@ static UIFont *valueFont = nil;
 
 @synthesize dataSource;
 
--(void) awakeFromNib {
+- (void)awakeFromNib {
+    
+    [super awakeFromNib];
     
     self.bounces = YES;
     self.scrollEnabled = YES;
@@ -142,7 +144,7 @@ static UIFont *valueFont = nil;
     self.showsVerticalScrollIndicator = NO;  
 }
 
--(void) reloadData {
+ -(void)reloadData {
     
     int itemCount = [dataSource numberOfItemsForTickerView:self];
     self.backgroundColor = [dataSource backgroundColorForTickerView:self];

@@ -209,7 +209,7 @@
 }
 
 - (void)setBackButtonText:(NSString *)text {
-    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStyleBordered target: nil action: nil];
+    UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle:text style: UIBarButtonItemStylePlain target: nil action: nil];
     [[self navigationItem] setBackBarButtonItem: newBackButton];
 }
 
