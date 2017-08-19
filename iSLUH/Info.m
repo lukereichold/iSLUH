@@ -13,7 +13,7 @@
 
 @implementation Info
 
--(IBAction)sendFeedback:(id)sender
+- (IBAction)sendFeedback:(id)sender
 {
 	// Don't make the feedback button clickable if user can't send email from device
 	if ([MFMailComposeViewController canSendMail] == YES)
@@ -42,8 +42,7 @@
 # pragma mark MFMailComposeViewControllerDelegate
 
 
--(void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
-{
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
 	if (result == MFMailComposeResultSent)	{
 		NSLog(@"Message sent!");
 	}
@@ -78,10 +77,6 @@
 
 - (BOOL)shouldAutorotate {
     return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations {
-    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 
 - (IBAction)openPersonalSite {

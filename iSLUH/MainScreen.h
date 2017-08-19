@@ -12,12 +12,4 @@
 
 @property (nonatomic, strong) CalendarDetailPhone *vc;
 
-- (IBAction)loadSportsFeature:(id)sender;
-- (IBAction)loadWebFeature:(id)sender;
-- (IBAction)loadInfoFeature:(id)sender;
-- (IBAction)loadCalendar:(id)sender;
-- (IBAction)loadGamesIndex:(id)sender;
-- (IBAction)loadMoreResources:(id)sender;
-
-
 @end

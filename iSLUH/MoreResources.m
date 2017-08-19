@@ -29,15 +29,10 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    
-    return ([Convenience isiPad]) ? UIInterfaceOrientationMaskAll : (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
-}
-
 #pragma mark Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 2;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -49,9 +44,6 @@
 		case 1: {
 			return @"Online Homework";
 			break;}
-		case 2: {
-			return @"Quarter Class Rotations";
-			break; }		
 		default:
 			return @"";
 			break;
@@ -64,9 +56,6 @@
 			return 6;
 			break;}
 		case 1:	{			// Online Homework
-			return 4;
-			break;}
-		case 2:	{			// Schedule Rotations
 			return 4;
 			break;}
 		default: {
@@ -143,40 +132,6 @@
         }
     }
     
-    // Schedule Rotation
-    else if (indexPath.section == 2) {
-        
-        cell.backgroundColor = [UIColor whiteColor];
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        [[cell textLabel] setTextColor:[UIColor sluhNavy]];
-        cell.userInteractionEnabled = NO;
-
-        switch (indexPath.row) {
-            case 0: {
-                cell.textLabel.text = @"1st Quarter";
-                cell.detailTextLabel.text = @"ABCDEFG";
-                break;
-            }
-            case 1: {
-                cell.textLabel.text = @"2nd Quarter";
-                cell.detailTextLabel.text = @"CDGABEF";
-                break;
-            }
-            case 2: {
-                cell.textLabel.text = @"3rd Quarter";
-                cell.detailTextLabel.text = @"EGFBACD";
-                break;
-            }
-            case 3: {
-                cell.textLabel.text = @"4th Quarter";
-                cell.detailTextLabel.text = @"CDEGFAB";
-                break;
-            }
-            default:
-                break;
-        }
-    }
-
     return cell;
 }
 

@@ -4,6 +4,4 @@
 
 @interface Info : UIViewController <MFMailComposeViewControllerDelegate, UINavigationControllerDelegate> {}
 
--(IBAction)sendFeedback:(id)sender;
-
 @end

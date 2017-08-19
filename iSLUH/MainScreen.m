@@ -320,8 +320,4 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
-}
-
 @end
