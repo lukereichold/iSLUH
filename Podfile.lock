@@ -1,0 +1,12 @@
+PODS:
+  - FontAwesome (4.5.0)
+
+DEPENDENCIES:
+  - FontAwesome
+
+SPEC CHECKSUMS:
+  FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
+
+PODFILE CHECKSUM: 2ebcbda0303dd7da997a6cee452ef3f35e4e7255
+
+COCOAPODS: 1.2.1

@@ -20,7 +20,7 @@
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0) //1
 
-@interface MainScreen ()
+@interface MainScreen () <MKTickerViewDataSource>
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labelsCollection;
 @property (strong, nonatomic) IBOutlet UIButton *moreResourcesButton;
@@ -262,7 +262,7 @@
     return [UIImage imageNamed:imageFileName];
 }
 
-- (void)viewWillAppear:(BOOL)animated   {
+- (void)viewWillAppear:(BOOL)animated {
     
     double tickerHeight = 28.0;
     self.tickerView = [[MKTickerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - tickerHeight, 320, tickerHeight)];
@@ -296,8 +296,7 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated    {
-    
+- (void)viewWillDisappear:(BOOL)animated {
     [self.tickerView removeFromSuperview];
     self.tickerView = nil;
     self.tickerItems = nil;

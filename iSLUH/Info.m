@@ -13,11 +13,9 @@
 
 @implementation Info
 
-- (IBAction)sendFeedback:(id)sender
-{
-	// Don't make the feedback button clickable if user can't send email from device
-	if ([MFMailComposeViewController canSendMail] == YES)
-	{
+- (IBAction)sendFeedback:(id)sender {
+
+	if ([MFMailComposeViewController canSendMail]) {
 		MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc]init];
 		mailer.navigationBar.tintColor = [UIColor blueColor];
 		mailer.mailComposeDelegate = self;
@@ -27,7 +25,7 @@
 		
 		[mailer setToRecipients: [NSArray arrayWithObject:@"sluhiphone@gmail.com"]];
 		
-		if (mailer !=nil)	{
+		if (mailer !=nil) {
             [self presentViewController:mailer animated:YES completion:nil];
 		}
 	}
@@ -57,8 +55,7 @@
 
     [self createBackgroundGradientWithTopColor:[UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1] bottomColor:[UIColor sluhWarmGrey]];
 
-    for (UILabel *label in self.labelsCollection)
-    {
+    for (UILabel *label in self.labelsCollection) {
         label.font = [UIFont fontWithName:@"Ubuntu" size:16];
         label.textColor = [UIColor sluhNavy];
     }

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) Reachability *reachability;
 
 @property (strong) NSArray<NSString *> *resources;
+@property (strong) NSArray<NSString *> *homeworkResources;
 
 @end
 
@@ -24,6 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.resources = @[@"SLUH Library", @"PowerTeacher", @"PULSE Student Radio", @"Campus Ministry", @"AlumConnect", @"This Week in Sports", @"SLUH Facebook Page", @"SLUH Twitter"];
+        self.homeworkResources = @[@"WebAssign", @"Quia Web", @"BioWeb", @"SLUHdle", @"Canvas"];
     }
     return self;
 }
@@ -62,11 +64,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	switch (section) {
-		case 0:	{			// General Resources
+		case 0:	{
 			return self.resources.count;
 			break;}
-		case 1:	{			// Online Homework
-			return 4;
+		case 1:	{
+			return self.homeworkResources.count;
 			break;}
 		default: {
 			return 0;
@@ -103,22 +105,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.detailTextLabel.text = @"";
         
-        switch (indexPath.row) {
-            case 0:{
-                cell.textLabel.text = @"WebAssign";
-                break;}
-            case 1:{
-                cell.textLabel.text = @"Quia Web";
-                break;}
-            case 2:{
-                cell.textLabel.text = @"BioWeb";
-                break;}
-            case 3:{
-                cell.textLabel.text = @"SLUHdle";
-                break;}
-            default:
-                break;
-        }
+        cell.textLabel.text = [self.homeworkResources objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -200,6 +187,11 @@
             }
             else if (indexPath.row == 3) {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhMoodle] title:@"SLUHdle"];
+                [self setBackButtonText:@"Resources"];
+                [self.navigationController pushViewController:self.webController animated:YES];
+            }
+            else if (indexPath.row == 4) {
+                self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhCanvas] title:@"Canvas"];
                 [self setBackButtonText:@"Resources"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }

@@ -1,9 +1,10 @@
 #import "CalendarDetailPad.h"
 #import "Calendar.h"
-#import "NSString+FontAwesome.h"
-#import <EventKit/EventKit.h>
 #import "UIColor+SLUHCustom.h"
 #import "Convenience.h"
+
+@import EventKit;
+@import FontAwesome;
 
 @interface CalendarDetailPad ()
 
@@ -20,6 +21,15 @@
 @end
 
 @implementation CalendarDetailPad
+
+#pragma mark: - Lifecycle
+
+- (id)initWithEvent:(Calendar *)event {
+    if ((self = [super init])) {
+        myEvent = event;
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -51,35 +61,28 @@
         self.startTimeIconLabel.text = @"\uf042";
 		self.startTimeLabel.text = [NSString stringWithFormat:@"%@", newStartDate];
 	}
-	
-	if ([myEvent.location length]) {
-        self.locationLabel.text = myEvent.location;
-        self.mapMarkerLabel.text = @"\uf041";
-    } else {
-		[self.locationLabel setHidden: YES];
-        [self.mapMarkerLabel setHidden: YES];
-	}
     
-	if ([myEvent.description length]) {
-		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.eventDescription];
-        self.descriptionIconLabel.text = @"\uf0e5";
+    if ([myEvent.location length]) {
+        self.locationLabel.text = myEvent.location;
+        self.mapMarkerLabel.text = [NSString fontAwesomeIconStringForEnum:FAMapMarker];
+    } else {
+        [self.locationLabel setHidden: YES];
+        [self.mapMarkerLabel setHidden: YES];
+    }
+    
+    if ([myEvent.description length]) {
+        self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.eventDescription];
+        self.descriptionIconLabel.text = [NSString fontAwesomeIconStringForEnum:FACommentO];
     } else {
         [self.descriptionIconLabel setHidden: YES];
-		[self.descriptionLabel setHidden: YES];
-		[self.descriptionTextView setHidden: YES];
-	}
+        [self.descriptionLabel setHidden: YES];
+        [self.descriptionTextView setHidden: YES];
+    }
+    
 }
 
 - (BOOL)shouldAutorotate {
     return YES;
-}
-
-- (id)initWithEvent:(Calendar *)theEventCal
-{
-    if ((self = [super init])) {
-        myEvent = theEventCal;
-    }
-    return self;
 }
 
 - (IBAction)addEventToCalendar {

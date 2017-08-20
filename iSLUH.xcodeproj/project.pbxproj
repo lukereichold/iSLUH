@@ -125,9 +125,6 @@
 		C375F4C117F739B30003D582 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C375F4C017F739B30003D582 /* CoreData.framework */; };
 		C375F4C417F73A450003D582 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C375F4C317F73A450003D582 /* libz.dylib */; };
 		C375F4D117F73D1F0003D582 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C375F4D017F73D1F0003D582 /* AdSupport.framework */; };
-		C375F4D617F752F00003D582 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C375F4D317F752F00003D582 /* NSString+FontAwesome.m */; };
-		C375F4D717F752F00003D582 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C375F4D517F752F00003D582 /* UIFont+FontAwesome.m */; };
-		C375F4D917F752FA0003D582 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C375F4D817F752FA0003D582 /* FontAwesome.ttf */; };
 		C375F4DC17F766370003D582 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C375F4DB17F766370003D582 /* EventKit.framework */; };
 		C3814B8817FF6C9F00EB4618 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3814B8517FF6C9F00EB4618 /* Ubuntu-Light.ttf */; };
 		C3814B8917FF6C9F00EB4618 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3814B8617FF6C9F00EB4618 /* Ubuntu-Medium.ttf */; };
@@ -138,7 +135,9 @@
 		C3814BE21800B03600EB4618 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 533B285211E2D42300B3CC07 /* libsqlite3.dylib */; };
 		C3814BE41800B04700EB4618 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3814BE31800B04700EB4618 /* CoreTelephony.framework */; };
 		C3A9ED6417B8653200866C97 /* BreeSerif-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A9ED6317B8653200866C97 /* BreeSerif-Regular.otf */; };
+		C3B6F81D1F4A0571004ED279 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3B6F81C1F4A0571004ED279 /* FontAwesome.ttf */; };
 		C3F9B42A17DBCAD900F1DF1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F9B42917DBCAD900F1DF1D /* Images.xcassets */; };
+		DB2AC9E7EC8B13538063AB8F /* Pods_iSLUH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0E3A33E12F5B993EA6CF0E /* Pods_iSLUH.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +166,7 @@
 		32CA4F630368D1EE00C91783 /* iSLUH_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSLUH_Prefix.pch; sourceTree = "<group>"; };
 		533B285211E2D42300B3CC07 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* iSLUH-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iSLUH-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C0D77313C7B6B54293F1234C /* Pods-iSLUH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSLUH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSLUH/Pods-iSLUH.debug.xcconfig"; sourceTree = "<group>"; };
 		C329A01713CFB878001928A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C329A01913CFB880001928A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C329A01B13CFB888001928A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -322,11 +322,6 @@
 		C375F4C017F739B30003D582 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C375F4C317F73A450003D582 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C375F4D017F73D1F0003D582 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		C375F4D217F752F00003D582 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
-		C375F4D317F752F00003D582 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
-		C375F4D417F752F00003D582 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
-		C375F4D517F752F00003D582 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
-		C375F4D817F752FA0003D582 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		C375F4DB17F766370003D582 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		C3814B8517FF6C9F00EB4618 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 		C3814B8617FF6C9F00EB4618 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
@@ -337,8 +332,11 @@
 		C3814BE31800B04700EB4618 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C3814BE91800B1BA00EB4618 /* libUAirship-3.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-3.0.0.a"; path = "../Airship/libUAirship-3.0.0.a"; sourceTree = "<group>"; };
 		C3A9ED6317B8653200866C97 /* BreeSerif-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BreeSerif-Regular.otf"; sourceTree = "<group>"; };
+		C3B6F81C1F4A0571004ED279 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		C3D5269B13D215F700458496 /* sluh_front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sluh_front.jpg; sourceTree = "<group>"; };
 		C3F9B42917DBCAD900F1DF1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F57D7F4759C57C51F8B330F1 /* Pods-iSLUH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSLUH.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSLUH/Pods-iSLUH.release.xcconfig"; sourceTree = "<group>"; };
+		FD0E3A33E12F5B993EA6CF0E /* Pods_iSLUH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSLUH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +362,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				DB2AC9E7EC8B13538063AB8F /* Pods_iSLUH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +404,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+		29B97314FDCFA39411CA2CEA = {
 			isa = PBXGroup;
 			children = (
 				C32EBF10180A5156006A9C53 /* Kal.bundle */,
@@ -416,6 +415,7 @@
 				C344464D13CFA3EB00397E3C /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				6AFF95FD473120038504DB0A /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -485,6 +485,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				FD0E3A33E12F5B993EA6CF0E /* Pods_iSLUH.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -507,6 +508,15 @@
 				C32EBEB8180A3638006A9C53 /* SBJsonWriter.m */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		6AFF95FD473120038504DB0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0D77313C7B6B54293F1234C /* Pods-iSLUH.debug.xcconfig */,
+				F57D7F4759C57C51F8B330F1 /* Pods-iSLUH.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C31F589017EE45E30064271A /* iPhone */ = {
@@ -673,7 +683,7 @@
 		C374950A17E57DC1005B7B00 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				C375F4DA17F752FD0003D582 /* FontAwesome */,
+				C3B6F81C1F4A0571004ED279 /* FontAwesome.ttf */,
 				C3814B8517FF6C9F00EB4618 /* Ubuntu-Light.ttf */,
 				C3814B8617FF6C9F00EB4618 /* Ubuntu-Medium.ttf */,
 				C3814B8717FF6C9F00EB4618 /* Ubuntu-Regular.ttf */,
@@ -682,18 +692,6 @@
 				C37494FC17E5418F005B7B00 /* Varela-Regular.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		C375F4DA17F752FD0003D582 /* FontAwesome */ = {
-			isa = PBXGroup;
-			children = (
-				C375F4D817F752FA0003D582 /* FontAwesome.ttf */,
-				C375F4D217F752F00003D582 /* NSString+FontAwesome.h */,
-				C375F4D317F752F00003D582 /* NSString+FontAwesome.m */,
-				C375F4D417F752F00003D582 /* UIFont+FontAwesome.h */,
-				C375F4D517F752F00003D582 /* UIFont+FontAwesome.m */,
-			);
-			path = FontAwesome;
 			sourceTree = "<group>";
 		};
 		C3A9ED5A17B8649900866C97 /* App Icons */ = {
@@ -724,9 +722,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iSLUH" */;
 			buildPhases = (
+				38B4D1513652D87821E9EE6D /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9BEF15C3F690A4FAB2B59159 /* [CP] Embed Pods Frameworks */,
+				0CD215AE785FB0E2A469BCBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -761,7 +762,8 @@
 				French,
 				German,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -808,7 +810,6 @@
 				C35949E11818A03200659156 /* news_pad@2x.png in Resources */,
 				C35949E21818A03200659156 /* sports_pad.png in Resources */,
 				C35949E31818A03200659156 /* sports_pad@2x.png in Resources */,
-				C375F4D917F752FA0003D582 /* FontAwesome.ttf in Resources */,
 				C3814B8D17FF813500EB4618 /* logomark.png in Resources */,
 				C32EBE77180A358A006A9C53 /* CreateCardsVCiPad.xib in Resources */,
 				C32EBEC9180A365B006A9C53 /* GradientButton.xib in Resources */,
@@ -846,6 +847,7 @@
 				C32EBF31180A61D1006A9C53 /* sports.png in Resources */,
 				C32EBE85180A35A0006A9C53 /* DidYouKnow.xib in Resources */,
 				C3594A0D181ACD4D00659156 /* ipad-ret-landscape.png in Resources */,
+				C3B6F81D1F4A0571004ED279 /* FontAwesome.ttf in Resources */,
 				C3594A0E181ACD4D00659156 /* ipad-ret-portrait.png in Resources */,
 				C32EBED1180A3673006A9C53 /* Info-iPad.xib in Resources */,
 				C3814B8A17FF6C9F00EB4618 /* Ubuntu-Regular.ttf in Resources */,
@@ -866,6 +868,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD215AE785FB0E2A469BCBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSLUH/Pods-iSLUH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38B4D1513652D87821E9EE6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEF15C3F690A4FAB2B59159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSLUH/Pods-iSLUH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -904,7 +954,6 @@
 				C32EBE9A180A35DD006A9C53 /* CampusMinistry.m in Sources */,
 				C32EBED0180A3673006A9C53 /* Info-iPad.m in Sources */,
 				C32EBE76180A358A006A9C53 /* CreateCardsVCiPad.m in Sources */,
-				C375F4D717F752F00003D582 /* UIFont+FontAwesome.m in Sources */,
 				C32EBEA7180A3615006A9C53 /* PBWebViewController.m in Sources */,
 				C32EBE51180A351B006A9C53 /* HolidaysDetailViewController.m in Sources */,
 				C32EBE84180A35A0006A9C53 /* DidYouKnow.m in Sources */,
@@ -914,7 +963,6 @@
 				C32EBEBC180A3638006A9C53 /* SBJsonBase.m in Sources */,
 				C32EBE92180A35CC006A9C53 /* Sports.m in Sources */,
 				C32EBE46180A34E3006A9C53 /* Calendar.m in Sources */,
-				C375F4D617F752F00003D582 /* NSString+FontAwesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,13 +979,16 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D77313C7B6B54293F1234C /* Pods-iSLUH.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: KAREN KAEMMERER-REICHOLD";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -959,6 +1010,7 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukereichold.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = iSLUH;
@@ -970,13 +1022,16 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57D7F4759C57C51F8B330F1 /* Pods-iSLUH.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: KAREN KAEMMERER-REICHOLD";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/iSLUH_Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -996,6 +1051,7 @@
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukereichold.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = iSLUH;

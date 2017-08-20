@@ -1,10 +1,10 @@
 #import "CalendarDetailPhone.h"
 #import "Calendar.h"
-#import "NSString+FontAwesome.h"
-#import "UIFont+FontAwesome.h"
-#import <EventKit/EventKit.h>
 #import "UIColor+SLUHCustom.h"
 #import "Convenience.h"
+
+@import FontAwesome;
+@import EventKit;
 
 @interface CalendarDetailPhone ()
 
@@ -22,10 +22,11 @@
 
 @implementation CalendarDetailPhone
 
-- (id)initWithEvent:(Calendar *)theEventCal
-{
+#pragma mark: - Lifecycle
+
+- (id)initWithEvent:(Calendar *)event {
     if ((self = [super init])) {
-        myEvent = theEventCal;
+        myEvent = event;
     }
     return self;
 }
@@ -54,13 +55,13 @@
 	[format setLocale:[NSLocale currentLocale]];
 	if (myEvent.date != nil && myEvent.endDate != nil) {
 		NSString *newStartDate = [format stringFromDate:myEvent.date];
-        self.startTimeIconLabel.text = [NSString fontAwesomeIconStringForIconIdentifier:@"fa-adjust"];
+        self.startTimeIconLabel.text = [NSString fontAwesomeIconStringForEnum:FAAdjust];
 		self.startTimeLabel.text = [NSString stringWithFormat:@"%@", newStartDate];
 	}
 	
 	if ([myEvent.location length]) {
         self.locationLabel.text = myEvent.location;
-        self.mapMarkerLabel.text = [NSString fontAwesomeIconStringForIconIdentifier:@"fa-map-marker"];
+        self.mapMarkerLabel.text = [NSString fontAwesomeIconStringForEnum:FAMapMarker];
     } else {
 		[self.locationLabel setHidden: YES];
         [self.mapMarkerLabel setHidden: YES];
@@ -68,20 +69,12 @@
     
 	if ([myEvent.description length]) {
 		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.eventDescription];
-        self.descriptionIconLabel.text = [NSString fontAwesomeIconStringForIconIdentifier:@"fa-comment-o"];
+        self.descriptionIconLabel.text = [NSString fontAwesomeIconStringForEnum:FACommentO];
     } else {
         [self.descriptionIconLabel setHidden: YES];
 		[self.descriptionLabel setHidden: YES];
 		[self.descriptionTextView setHidden: YES];
 	}
-}
-
-- (BOOL)shouldAutorotate {
-    return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations {
-    return (UIInterfaceOrientationPortrait | UIInterfaceOrientationPortraitUpsideDown);
 }
 
 - (IBAction)addEventToCalendar {

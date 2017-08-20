@@ -21,6 +21,9 @@
 + (NSURL *)sluhMoodle {
     return [NSURL URLWithString:@"http://tiny.cc/sluhMoodle"];
 }
++ (NSURL *)sluhCanvas {
+    return [NSURL URLWithString:@"http://tiny.cc/sluhCanvas"];
+}
 + (NSURL *)sluhLibrary {
     return [NSURL URLWithString:@"http://tiny.cc/sluhLibrary"];
 }

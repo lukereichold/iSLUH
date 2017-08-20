@@ -7,6 +7,6 @@
     Calendar *myEvent;
 }
 
-- (id)initWithEvent:(Calendar *)theEventCal;
+- (id)initWithEvent:(Calendar *)event;
     
 @end

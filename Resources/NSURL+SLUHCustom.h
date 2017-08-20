@@ -9,6 +9,7 @@
 + (NSURL *)sluhPowerteacher;
 + (NSURL *)sluhMail;
 + (NSURL *)sluhMoodle;
++ (NSURL *)sluhCanvas;
 + (NSURL *)sluhLibrary;
 + (NSURL *)sluhPulse;
 + (NSURL *)sluhWebAssign;
