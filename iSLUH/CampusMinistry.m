@@ -56,8 +56,7 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return ([Convenience isiPad]) ? UIInterfaceOrientationMaskAll : (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 

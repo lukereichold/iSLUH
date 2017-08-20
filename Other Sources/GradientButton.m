@@ -7,6 +7,8 @@
 
 - (void)awakeFromNib;
 {
+    [super awakeFromNib];
+    
     // Initialize the gradient layer
     self.gradientLayer = [[CAGradientLayer alloc] init];
     // Set its bounds to be the same of its parent
