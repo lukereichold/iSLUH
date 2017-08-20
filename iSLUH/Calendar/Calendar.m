@@ -12,7 +12,7 @@
 {
 	if ((self = [super init])) {
 		self.name = [aName copy];
-		self.description = [aDescription copy];
+		self.eventDescription = [aDescription copy];
 		self.date = aDate;
 		self.endDate = aEndDate;
 		self.location = [aLocation copy];

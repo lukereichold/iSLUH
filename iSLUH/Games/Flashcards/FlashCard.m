@@ -32,8 +32,8 @@
     
     [encoder encodeObject:self.question forKey:kQuestion];
     [encoder encodeObject:self.answer forKey:kAnswer];
-    [encoder encodeInt:self.rightCount forKey:kRightCount];
-    [encoder encodeInt:self.wrongCount forKey:kWrongCount];
+    [encoder encodeInt:(int)self.rightCount forKey:kRightCount];
+    [encoder encodeInt:(int)self.wrongCount forKey:kWrongCount];
     
 }
 

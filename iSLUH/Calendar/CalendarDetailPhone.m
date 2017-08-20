@@ -67,7 +67,7 @@
 	}
     
 	if ([myEvent.description length]) {
-		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.description];
+		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.eventDescription];
         self.descriptionIconLabel.text = [NSString fontAwesomeIconStringForIconIdentifier:@"fa-comment-o"];
     } else {
         [self.descriptionIconLabel setHidden: YES];

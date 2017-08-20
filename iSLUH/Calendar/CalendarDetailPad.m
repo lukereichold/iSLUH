@@ -61,7 +61,7 @@
 	}
     
 	if ([myEvent.description length]) {
-		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.description];
+		self.descriptionTextView.text = [NSString stringWithFormat:@"%@", myEvent.eventDescription];
         self.descriptionIconLabel.text = @"\uf0e5";
     } else {
         [self.descriptionIconLabel setHidden: YES];
@@ -74,10 +74,6 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskAll;
-}
-
 - (id)initWithEvent:(Calendar *)theEventCal
 {
     if ((self = [super init])) {
@@ -85,8 +81,6 @@
     }
     return self;
 }
-
-
 
 - (IBAction)addEventToCalendar {
     
