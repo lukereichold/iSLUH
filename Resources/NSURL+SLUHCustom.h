@@ -52,5 +52,7 @@
 + (NSURL *)sluhTickerAnnouncements;
 + (NSURL *)sluhPersonalSite;
 + (NSURL *)sluhTWISS;
++ (NSURL *)sluhFacebook;
++ (NSURL *)sluhTwitter;
 
 @end

@@ -12,11 +12,21 @@
 @property (strong, nonatomic) PBWebViewController *webController;
 @property (strong, nonatomic) Reachability *reachability;
 
+@property (strong) NSArray<NSString *> *resources;
+
 @end
 
 @implementation MoreResources
 
 #pragma mark View lifecycle
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.resources = @[@"SLUH Library", @"PowerTeacher", @"PULSE Student Radio", @"Campus Ministry", @"AlumConnect", @"This Week in Sports", @"SLUH Facebook Page", @"SLUH Twitter"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     
@@ -53,7 +63,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	switch (section) {
 		case 0:	{			// General Resources
-			return 6;
+			return self.resources.count;
 			break;}
 		case 1:	{			// Online Homework
 			return 4;
@@ -82,28 +92,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.detailTextLabel.text = @"";
         
-        switch (indexPath.row) {
-            case 0: {
-                cell.textLabel.text = @"SLUH Library";
-                break;}
-            case 1:{
-                cell.textLabel.text = @"PowerTeacher";
-                break;}
-            case 2:{
-                cell.textLabel.text = @"PULSE Student Radio";
-                break;}
-            case 3:{
-                cell.textLabel.text = @"Campus Ministry";
-                break;}
-            case 4:{
-                cell.textLabel.text = @"AlumConnect";
-                break;}
-            case 5:{
-                cell.textLabel.text = @"This Week in SLUH Sports";
-                break;}
-            default:
-                break;
-        }
+        cell.textLabel.text = [self.resources objectAtIndex:indexPath.row];
     }
     else if (indexPath.section == 1) {
         
@@ -177,6 +166,16 @@
             }
             else if (indexPath.row == 5) {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhTWISS] title:@"This Week in Sports"];
+                [self setBackButtonText:@"Resources"];
+                [self.navigationController pushViewController:self.webController animated:YES];
+            }
+            else if (indexPath.row == 6) {
+                self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhFacebook] title:@"SLUH Facebook"];
+                [self setBackButtonText:@"Resources"];
+                [self.navigationController pushViewController:self.webController animated:YES];
+            }
+            else if (indexPath.row == 7) {
+                self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhTwitter] title:@"SLUH Twitter"];
                 [self setBackButtonText:@"Resources"];
                 [self.navigationController pushViewController:self.webController animated:YES];
             }

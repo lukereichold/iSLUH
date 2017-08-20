@@ -142,6 +142,12 @@
 + (NSURL *)sluhTWISS {
     return [NSURL URLWithString:@"http://tiny.cc/sluhTWISS"];
 }
++ (NSURL *)sluhFacebook {
+    return [NSURL URLWithString:@"http://tiny.cc/sluhFacebook"];
+}
++ (NSURL *)sluhTwitter {
+    return [NSURL URLWithString:@"http://tiny.cc/sluhTwitter"];
+}
 
 
 @end
