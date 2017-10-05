@@ -193,8 +193,7 @@
     if ([dict isKindOfClass:[NSDictionary class]]) {
         
         if ([(NSDictionary *)dict objectForKey:@"Title"]) {
-//            return [(NSDictionary *)dict objectForKey:@"Title"];
-            return @"THIS IS A TEST TITLE";
+            return [(NSDictionary *)dict objectForKey:@"Title"];
         }
         else
             return @"";
@@ -210,8 +209,7 @@
     if ([dict isKindOfClass:[NSDictionary class]]) {
         
         if ([(NSDictionary *)dict objectForKey:@"Description"]) {
-//            return [(NSDictionary *)dict objectForKey:@"Description"];
-            return @"THIS IS A TEST DESCRIPTION";
+            return [(NSDictionary *)dict objectForKey:@"Description"];
         }
         else return @"";
     }
