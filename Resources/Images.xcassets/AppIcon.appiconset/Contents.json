@@ -89,6 +89,12 @@
       "idiom" : "ipad",
       "filename" : "sluh-icon-167.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "logo_1024.png",
+      "scale" : "1x"
     }
   ],
   "info" : {
