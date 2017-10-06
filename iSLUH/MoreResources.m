@@ -25,7 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.resources = @[@"SLUH Library", @"PowerTeacher", @"PULSE Student Radio", @"Campus Ministry", @"AlumConnect", @"This Week in Sports", @"SLUH Facebook Page", @"SLUH Twitter"];
-        self.homeworkResources = @[@"WebAssign", @"Quia Web", @"BioWeb", @"SLUHdle", @"Canvas"];
+        self.homeworkResources = @[@"WebAssign", @"Quia Web", @"BioWeb", @"Canvas"];
     }
     return self;
 }
@@ -186,11 +186,6 @@
                 [self.navigationController pushViewController:self.webController animated:YES];
             }
             else if (indexPath.row == 3) {
-                self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhMoodle] title:@"SLUHdle"];
-                [self setBackButtonText:@"Resources"];
-                [self.navigationController pushViewController:self.webController animated:YES];
-            }
-            else if (indexPath.row == 4) {
                 self.webController = [[PBWebViewController alloc] initWithURL:[NSURL sluhCanvas] title:@"Canvas"];
                 [self setBackButtonText:@"Resources"];
                 [self.navigationController pushViewController:self.webController animated:YES];

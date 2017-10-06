@@ -22,7 +22,7 @@
 #define kButtonBaseTag 10000
 #define kLabelPadding 10
 #define kItemPadding 30
-#define kMaxWidth 200
+#define kMaxWidth 5000
 #define kSpacer 100
 #define kPixelsPerSecond 60.0f
 
@@ -57,17 +57,13 @@ static UIFont *valueFont = nil;
 }
 
 - (CGFloat) titleWidth {
-    
-  return [_title sizeWithFont:titleFont
-            constrainedToSize:CGSizeMake(kMaxWidth, self.frame.size.height)                     
-                lineBreakMode:NSLineBreakByClipping].width;
+    NSDictionary *textAttributes = @{NSFontAttributeName: titleFont};
+    return [_title boundingRectWithSize:CGSizeMake(kMaxWidth, self.frame.size.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:textAttributes context:nil].size.width;
 }
 
 - (CGFloat) valueWidth {
-    
-  return [_value sizeWithFont:valueFont         
-            constrainedToSize:CGSizeMake(kMaxWidth, self.frame.size.height)                                 
-                lineBreakMode:NSLineBreakByClipping].width;
+    NSDictionary *textAttributes = @{NSFontAttributeName: valueFont};
+    return [_value boundingRectWithSize:CGSizeMake(kMaxWidth, self.frame.size.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:textAttributes context:nil].size.width;
 }
 
 - (CGFloat) width {
@@ -106,8 +102,9 @@ static UIFont *valueFont = nil;
     CGContextSetFillColorWithColor(UIGraphicsGetCurrentContext(), [UIColor sluhNavy].CGColor);
 
     [_image drawInRect:CGRectMake(0, 9, 12, 7)];
-    [_title drawInRect:CGRectMake(18, 3, [self titleWidth], 26) withFont:titleFont];
-    [_value drawInRect:CGRectMake(18 + [self titleWidth] + kLabelPadding, 2, [self valueWidth], 26) withFont:valueFont];
+    
+    [_title drawInRect:CGRectMake(18, 3, [self titleWidth], 26) withAttributes:@{NSFontAttributeName: titleFont}];
+    [_value drawInRect:CGRectMake(18 + [self titleWidth] + kLabelPadding, 2, [self valueWidth], 26) withAttributes:@{NSFontAttributeName: valueFont}];
 
     [super drawRect:rect];
 }
